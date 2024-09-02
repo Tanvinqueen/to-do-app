@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - the Code School</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container w-full p-2 item-center">
+        <div class="todo-app w-full p-4 mt-2 bg-gray-100 item-center rounded-lg border border-green-700 ">
+            <h2 class="text-center text-green-900 text-lg">To-Do List</h2>
+
+            <div class="row flex gap-2 ">
+                <input class="item-center w-full" type="text" name="" id="input-box" placeholder="Add your Task">
+                <button onclick="addTask()" class="= bg-green-500 text-white p-2 rounded hover: transition-all hover:bg-blue-200 hover:text-black hover:translate-x-2  ">Add Task</button>
+            </div>
+
+            <ul id="list-container" class="hover:bg-green-800 hover:text-white bg-blue-300">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
